@@ -1,0 +1,25 @@
+//syntax = "proto3";
+//
+//
+//
+//package pb;
+//
+//
+////import "google/api/annotations.proto";
+//import "google.protobuf";
+//
+//
+//service LibraryService {
+//  rpc UpdateBook(UpdateBookRequest) returns (Book){};
+//}
+//
+//message UpdateBookRequest {
+//// 用于更新服务器上资源的book数据
+//  Book book = 1;
+//  // 用于更新资源的掩码
+//  google.protobuf.FieldMask update_mask = 2;
+//}
+//
+//message Book {
+//  string name = 1;
+//}
