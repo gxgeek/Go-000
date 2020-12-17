@@ -19,33 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d8b60ef-3aff-4180-84db-d0408a7db039" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week04/cmd/server/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/configs/app.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/biz/cache_service/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/biz/tag_service/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/data/models.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/data/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/e/cache.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/e/code.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/e/msg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/file/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/gredis/redis.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/logging/file.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/logging/log.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/setting/setting.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/util/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/util/md5.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/util/pagination.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/pkg/util/result.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/server/http/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/internal/server/http/v1/tag.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/middleware/jwt/jwt.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Week04/pb/Simple.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-    </list>
+    <list default="true" id="3d8b60ef-3aff-4180-84db-d0408a7db039" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -79,7 +53,7 @@
     <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week04/internal/pkg/app" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
@@ -88,14 +62,14 @@
       <recent name="$PROJECT_DIR$/Week04/internal/biz" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Week04/internal/pkg/app" />
+      <recent name="$PROJECT_DIR$/Week04/internal/pkg" />
       <recent name="$PROJECT_DIR$/Week04" />
       <recent name="$PROJECT_DIR$/Week04/internal/server/http" />
-      <recent name="$PROJECT_DIR$/Week04/internal/pkg" />
       <recent name="$PROJECT_DIR$/Week04/internal/biz" />
-      <recent name="$PROJECT_DIR$/Week04/internal/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build Go-000/Week03">
+  <component name="RunManager" selected="Go Build.go build Go-000/Week04/cmd/server">
     <configuration name="go build Go-000/Week02" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Go-000" />
       <working_directory value="$PROJECT_DIR$" />
@@ -123,8 +97,18 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build Go-000/Week04/cmd/server" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Go-000" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Week04/cmd/server/main.go" />
+      <package value="Go-000/Week04/cmd/server" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build Go-000/Week04/cmd/server" />
         <item itemvalue="Go Build.go build Go-000/Week03" />
         <item itemvalue="Go Build.go build Go-000/Week02" />
         <item itemvalue="Go Build.go build Go-000/Week02/dao" />
