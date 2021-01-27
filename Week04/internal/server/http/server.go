@@ -4,7 +4,6 @@ import (
 	"Go-000/Week04/internal/pkg/logging"
 	"Go-000/Week04/internal/pkg/setting"
 	v1 "Go-000/Week04/internal/server/http/v1"
-	"Go-000/Week04/middleware/jwt"
 	"context"
 	"fmt"
 	"github.com/gin-gonic/gin"
@@ -71,7 +70,7 @@ func InitRouter() *gin.Engine {
 		})
 	})
 	apiv1 := router.Group("/api/v1")
-	apiv1.Use(jwt.JWT())
+	//apiv1.Use(jwt.JWT())
 	{
 		//获取标签列表
 		apiv1.GET("/tags", v1.GetTags)
@@ -81,6 +80,8 @@ func InitRouter() *gin.Engine {
 		apiv1.PUT("/tags/:id", v1.UpdateTags)
 		//删除指定标签
 		apiv1.DELETE("/tags/:id", v1.DeleteTag)
+
+		apiv1.GET("/GenerateArticlePoster",v1.GenerateArticlePoster)
 
 	}
 

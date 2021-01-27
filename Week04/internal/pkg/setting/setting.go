@@ -12,7 +12,7 @@ type App struct {
 	PageSize  int
 	JwtSecret string
 
-	ImagePrefixUrl  string
+	PrefixUrl       string
 	ImageSavePath   string
 	ImageMaxSize    int
 	ImageAllowExts  []string
@@ -21,6 +21,9 @@ type App struct {
 	LogFileExt      string
 	TimeFormat      string
 	RuntimeRootPath string
+
+	//qr
+	QrCodeSavePath string
 }
 var AppSetting = &App{}
 

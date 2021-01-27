@@ -5,9 +5,11 @@ import (
 	"Go-000/Week04/internal/pkg/app"
 	"Go-000/Week04/internal/pkg/e"
 	"Go-000/Week04/internal/pkg/logging"
+	"Go-000/Week04/internal/pkg/qrcode"
 	"Go-000/Week04/internal/pkg/setting"
 	"Go-000/Week04/internal/pkg/util"
 	"github.com/astaxie/beego/validation"
+	"github.com/boombuler/barcode/qr"
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 	"net/http"
@@ -149,4 +151,23 @@ func DeleteTag(c *gin.Context)  {
 	}
 	tagService.Delete()
 	appG.FastReturnCode(http.StatusOK, e.SUCCESS)
+}
+
+
+const (
+	QRCODE_URL = "https://github.com/EDDYCJY/blog#gin%E7%B3%BB%E5%88%97%E7%9B%AE%E5%BD%95"
+)
+
+func GenerateArticlePoster(c *gin.Context)  {
+	appG := app.Gin{c}
+	qrc := qrcode.NewQrCode(QRCODE_URL, 300, 300, qr.M, qr.Auto)
+	path := qrcode.GetQrCodeFullPath()
+	_, _, err := qrc.Encode(path)
+	if err != nil {
+		appG.FastReturn(http.StatusOK, e.ERROR, nil)
+		return
+	}
+
+	appG.FastReturn(http.StatusOK, e.SUCCESS, nil)
+
 }
